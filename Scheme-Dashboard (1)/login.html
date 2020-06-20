@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<style>
+    span.testing {
+    background: url(https://jooinn.com/images/cardboard-texture-background.jpg);
+    background-color: #005ea4;
+    padding: 2px;
+    margin-bottom: 2px !important;
+    
+}
+@media only screen and (max-width: 500px) {
+  .label-input100 {
+    text-align: left;
+    position: unset;
+    top: unset;
+    left: unset;
+    /* width: 100%; */
+    /* padding: 0 5px; */
+    float: left;
+}
+.login100-form-btn1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 6px;
+    min-width: 100px;
+    height: 30px;
+    background-color: #F6A32B;
+    border-radius: 25px;
+    margin-right: 15px;
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.2;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    float: left;
+}
+.login100-form-btn2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    min-width: 100px;
+    height: 30px;
+    background-color: #005EA4;
+    border-radius: 25px;
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.2;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    float: right;
+}span.label-input100 {
+    font-size: 13px;
+}input.input100 {
+    height: 30px;
+    font-size: 13px;
+}.label-checkbox100 {
+   
+    font-size: 12px;
+}.txt1 {
+    
+    font-size: 12px;
+    
+}
+.login100-form-title{background-image: url(img/PRAYAS-logo.png);
+    
+    height: 150px;
+    background-size: contain;
+}
+}
+</style>	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(img/PRAYAS-logo.png);">
+					<span class="login100-form-title-1">
+						Sign In
+					</span>
+				</div>
+
+				<form class="login100-form validate-form">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="username" placeholder="Enter username">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" name="pass" placeholder="Enter password">
+						<span class="focus-input100"></span>
+					</div>
+
+
+					<div class="row" style="width: 100%;">
+					     <span class="testing">785249</span>
+						
+					  <a id="captcha_reload" href="#" style="background: #005ea4;padding: 3px 10px;border-radius: 4px;color: #fff;"><i class="fa fa-refresh"></i></a> 
+                        
+						
+						   
+					</div>
+						<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+							<input class="input100" type="text" name="username" placeholder="Enter Captcha Code">
+					</div>
+					
+
+						<div class="container-login100-form-btn">
+						<button class="login100-form-btn1">
+							<a href="schemes.html" style="color: #fff;">Login</a>
+						</button>
+						<button class="login100-form-btn2">
+							<a href="index.html" style="color: #fff;">Home</a>
+						</button>
+
+						<div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+	</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
